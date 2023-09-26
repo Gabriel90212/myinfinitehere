@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    position: relative;
+}  
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:100vh;
+    background: #111;
+}
+.svgbox svg
+{
+    fill: none;
+    stroke-width: 10px;
+    transform: scale(2);
+    stroke: url(#col);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+    stroke-dasharray: 60 172;
+    stroke-linecap: round;
+    animation: myinfinitehere 4s linear infinite;
+}
+@keyframes myinfinitehere 
+{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    100%
+    {
+        stroke-dashoffset: 232;
+    }
+}
